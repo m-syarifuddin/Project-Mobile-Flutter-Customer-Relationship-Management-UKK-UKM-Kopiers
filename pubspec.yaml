@@ -1,0 +1,42 @@
+name: kopiers
+description: "Aplikasi CRM Kopiers dengan akses Admin dan Customer."
+publish_to: 'none'
+
+version: 1.0.0+1
+
+environment:
+  sdk: ^3.13.5
+
+dependencies:
+  flutter:
+    sdk: flutter
+  cupertino_icons: ^1.0.8
+  http: ^1.6.0
+  shared_preferences: ^2.5.6
+  image_picker: ^1.2.4
+  qr_flutter: ^4.1.0
+  mobile_scanner: ^7.4.2
+  pdf: ^3.13.1
+  printing: ^5.15.1
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^6.0.0
+  flutter_launcher_icons: ^0.14.4
+
+flutter:
+  uses-material-design: true
+
+  assets:
+    - assets/images/logo_kopiers.png
+    - assets/images/logo_kopiers_putih.png
+    - assets/images/kopiers_app_icon.png
+    - assets/images/background_kartu_member.png
+
+flutter_launcher_icons:
+  android: true
+  ios: false
+  image_path: "assets/images/kopiers_app_icon.png"
+  adaptive_icon_background: "#FFFFFF"
+  adaptive_icon_foreground: "assets/images/kopiers_app_icon.png"
